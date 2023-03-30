@@ -1,0 +1,25 @@
+body {
+    background-color: lightgrey;
+}
+
+.form_wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 200px;
+    height: auto;
+    background: yellow;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.error_msg {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: red;
+    display: none;
+}

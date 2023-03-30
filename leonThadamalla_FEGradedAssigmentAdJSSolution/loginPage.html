@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginPageStyles.css">
+
+    <script type="text/javascript">
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="form_wrapper">
+        <div class="form">
+            <form method="post" action="Resume.html" onsubmit="return valFunct()">
+                <input type="text" id="input_username" name="username" placeholder="User Name" required /><br>
+                <input type="password" id="input_password" name="password" placeholder="Password" minlength="8"
+                    required><br>
+                <span class="error_msg"> Invlaid Username or Password. Please try again. </span><br>
+                <input type="submit" id="login_button" value="Login">
+            </form>
+        </div>
+    </div>
+    <script src="LoginScripts.js"></script>
+</body>
+
+</html>
